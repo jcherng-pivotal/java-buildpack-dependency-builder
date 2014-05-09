@@ -26,7 +26,7 @@ module Build
       protected
 
       def version_specific(version)
-        if version =~ /[\d]\.[\d]\.[\d]/
+        if version =~ /[\d]+\.[\d]+\.[\d]+/
           RESOURCES_DIR
         else
           fail "Unable to process version '#{version}'"
